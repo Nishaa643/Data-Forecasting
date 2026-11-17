@@ -185,31 +185,20 @@ configuration.
 
 ## Models
 
-  -----------------------------------------------------------------------
-  Model                               Main idea
-  ----------------------------------- -----------------------------------
-  **Informer**                        Uses ProbSparse attention to reduce
-                                      the cost of attention for long
-                                      input sequences.
+### 1. Informer
+Uses ProbSparse attention to reduce the computational cost of attention for long input sequences.
 
-  **FEDformer**                       Uses frequency-enhanced
-                                      representations and decomposition
-                                      to model trend and seasonal
-                                      patterns.
+### 2. FEDformer
+Uses frequency-enhanced representations and decomposition to model trend and seasonal patterns.
 
-  **PatchTST**                        Divides time series into patches
-                                      and applies Transformer-based
-                                      modelling to the patch
-                                      representations.
+### 3. PatchTST
+Divides time series into patches and applies Transformer-based modelling to the patch representations.
 
-  **ETSformer**                       Incorporates
-                                      exponential-smoothing-inspired
-                                      components into a Transformer
-                                      architecture.
+### 4. ETSformer
+Incorporates exponential-smoothing-inspired components into a Transformer architecture.
 
-  **Crossformer**                     Uses cross-dimension and
-                                      segment-level modelling for
-                                      multivariate time series.
+### 5. Crossformer
+Uses cross-dimension and segment-level modelling for multivariate time series.
   -----------------------------------------------------------------------
 
 ## Evaluation metrics
