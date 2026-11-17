@@ -91,7 +91,6 @@ Data_Forecasting/
                                              notebook
 
   `requirements.txt`                         Python dependencies
-  ------------------------------------------------------------------------------
 
 ## Requirements
 
@@ -199,7 +198,6 @@ Incorporates exponential-smoothing-inspired components into a Transformer archit
 
 ### 5. Crossformer
 Uses cross-dimension and segment-level modelling for multivariate time series.
-  -----------------------------------------------------------------------
 
 ## Evaluation metrics
 
