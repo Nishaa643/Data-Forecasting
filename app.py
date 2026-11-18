@@ -12,60 +12,28 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# 2. Appearance Selector Header (Top Right)
-top_col1, top_col2 = st.columns([4, 1])
-
-with top_col2:
-    theme_mode = st.segmented_control(
-        "Theme",
-        options=["Dark Mode", "Light Mode"],
-        default="Dark Mode",
-        key="app_theme_control"
-    )
-
 # 3. Dynamic Editorial Style Engine
-if theme_mode == "Light Mode":
-    bg_main = "#FAFAFC"
-    card_bg = "#FFFFFF"
-    text_primary = "#111827"
-    text_muted = "#475569"
-    border_color = "#CBD5E1"
-    plotly_template = "plotly_white"
-    chart_text = "#111827"
-    line_hist = "#475569"
-    line_forecast = "#BE123C"
-    line_base = "#6D28D9"
-    hero_bg = "linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 58%, #FFF1D6 100%)"
-    hero_border = "rgba(180, 83, 9, 0.35)"
-    hero_title = "#172033"
-    hero_subtitle = "#334155"
-    hero_badge_bg = "rgba(180, 83, 9, 0.08)"
-    hero_badge_border = "rgba(180, 83, 9, 0.35)"
-    hero_shadow = "0 12px 28px rgba(15, 23, 42, 0.10)"
-    uploader_button_bg = "#F1F5F9"
-    uploader_button_hover_bg = "#E2E8F0"
-    uploader_button_text = "#0F172A"
-else: # Dark Mode
-    bg_main = "#07080C"
-    card_bg = "#121520"
-    text_primary = "#F8FAFC"
-    text_muted = "#CBD5E1"
-    border_color = "#39445A"
-    plotly_template = "plotly_dark"
-    chart_text = "#F8FAFC"
-    line_hist = "#A8B4C7"
-    line_forecast = "#38BDF8"
-    line_base = "#FF6685"
-    hero_bg = "linear-gradient(135deg, #181514 0%, #292321 50%, #3D2314 100%)"
-    hero_border = "rgba(252, 211, 77, 0.4)"
-    hero_title = "#FCD34D"
-    hero_subtitle = "#FDE68A"
-    hero_badge_bg = "rgba(255, 255, 255, 0.08)"
-    hero_badge_border = "rgba(252, 211, 77, 0.35)"
-    hero_shadow = "0 15px 35px rgba(0, 0, 0, 0.3)"
-    uploader_button_bg = "#273247"
-    uploader_button_hover_bg = "#334155"
-    uploader_button_text = "#F8FAFC"
+# Dark Mode
+bg_main = "#07080C"
+card_bg = "#121520"
+text_primary = "#F8FAFC"
+text_muted = "#CBD5E1"
+border_color = "#39445A"
+plotly_template = "plotly_dark"
+chart_text = "#F8FAFC"
+line_hist = "#A8B4C7"
+line_forecast = "#38BDF8"
+line_base = "#FF6685"
+hero_bg = "linear-gradient(135deg, #181514 0%, #292321 50%, #3D2314 100%)"
+hero_border = "rgba(252, 211, 77, 0.4)"
+hero_title = "#FCD34D"
+hero_subtitle = "#FDE68A"
+hero_badge_bg = "rgba(255, 255, 255, 0.08)"
+hero_badge_border = "rgba(252, 211, 77, 0.35)"
+hero_shadow = "0 15px 35px rgba(0, 0, 0, 0.3)"
+uploader_button_bg = "#273247"
+uploader_button_hover_bg = "#334155"
+uploader_button_text = "#F8FAFC"
 
 st.markdown(f"""
     <style>
